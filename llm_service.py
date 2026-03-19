@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+print("DEBUG ENV KEY:", GROQ_API_KEY)
 
 def get_llm_response(user_input):
     if not GROQ_API_KEY:
